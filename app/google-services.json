@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "512749172179",
+    "firebase_url": "https://tracksub-d93a2.firebaseio.com",
+    "project_id": "tracksub-d93a2",
+    "storage_bucket": "tracksub-d93a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512749172179:android:7012affafbe6090e996b26",
+        "android_client_info": {
+          "package_name": "com.example.tracksubapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512749172179-tj0c69a59e2o4avgf89mr9t1rfld9r6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tracksubapp",
+            "certificate_hash": "b56f41f61f06b898ce8b5e5cbfd40afa275f4c7e"
+          }
+        },
+        {
+          "client_id": "512749172179-n3dorvocs6h8k9bp4qari1v0jkcn0g6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7wJJhuhYeavwcqo4c2i16uzUXxKnaC8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512749172179-n3dorvocs6h8k9bp4qari1v0jkcn0g6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="377dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:text="TrackSub is a program who’s care about tracking your subscriptions in multiple platforms in a lots of fields like, entertainment, education, podcast, music or movies. Or even in design field like adobe.You can add your subscription, determine the price and period and then get notification if subscription will be end. This benefit is to notify you to decide  if you want to renew or stop your subscription."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/titlesmall"
+        android:hapticFeedbackEnabled="false"
+        android:headerBackground="@drawable/titlesmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titlesmall" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/breakline"
+        android:hapticFeedbackEnabled="false"
+        android:headerBackground="@drawable/breakline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/view2"
+        app:layout_constraintTop_toTopOf="@id/view2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/breakline" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:onClick="moveToMain"
+        app:layout_constraintEnd_toStartOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="373dp"
+        android:layout_height="443dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/images" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
