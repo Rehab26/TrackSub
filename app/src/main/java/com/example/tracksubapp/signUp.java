@@ -62,7 +62,8 @@ public class signUp extends AppCompatActivity {
                                          User newUser = new User(user.getUid() , name , email );
                                          newUser.writeNewUser( name , email);
                                          //writeNewUser( user.getUid() , name , email);
-                                         Toast.makeText(signUp.this , "Welcome"+user.getUid() , Toast.LENGTH_LONG).show();
+                                         Intent intent = new Intent(signUp.this, profile.class);
+                                         startActivity(intent);
                                      } else {
                                          // If sign in fails, display a message to the user.
                                          Log.w(TAG, "createUserWithEmail:failure", task.getException());

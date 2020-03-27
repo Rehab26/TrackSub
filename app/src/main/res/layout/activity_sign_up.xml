@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/name22"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -92,29 +92,31 @@
         android:id="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:background="@drawable/edittext"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="password"
         android:inputType="textPassword"
         android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintBottom_toTopOf="@+id/confPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <EditText
         android:id="@+id/confPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/edittext"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="confirm password"
         android:inputType="textPassword"
         android:padding="10dp"
-        app:layout_constraintStart_toStartOf="@+id/pass"
-        app:layout_constraintTop_toBottomOf="@+id/pass" />
+        app:layout_constraintBottom_toTopOf="@+id/signBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/signBtn"
@@ -146,10 +148,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/signBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confPass"
-        app:layout_constraintVertical_bias="0.369" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"

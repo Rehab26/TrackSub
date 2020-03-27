@@ -18,6 +18,7 @@ public class User  {
     public String email;
     public String uid;
     public int subs;
+    Subs sub;
 
     public User() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
@@ -27,7 +28,6 @@ public class User  {
         this.name = username;
         this.email = email;
         this.uid = uid;
-        this.subs = 0;
 
     }
     public void writeNewUser( String name, String email) {
@@ -36,7 +36,7 @@ public class User  {
         myRef.child(this.uid).child("uid").setValue(this.uid);
         myRef.child(this.uid).child("name").setValue(name);
         myRef.child(this.uid).child("email").setValue(email);
-        myRef.child(this.uid).child("subsecriptions").child("all").setValue(subs);
+
     }
     public String getName() {
         return this.name;
