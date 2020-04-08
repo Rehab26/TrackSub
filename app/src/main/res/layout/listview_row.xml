@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:src="@drawable/box"
+    android:background="@drawable/xbox3">
+
+    <ImageView
+        android:id="@+id/imageView1ID"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/netflix"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-37dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="20dp"
+            android:text="app Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:id="@+id/price"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="#333"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            android:src="@drawable/btnsmall2" />
+
+    </LinearLayout>
+</LinearLayout>

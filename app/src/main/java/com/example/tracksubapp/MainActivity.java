@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, about.class);
         startActivity(i);
     }
+
+    //TEST PURPOSE HAVE TO BE CHANGE TO THE signUp.class
     public void moveToSign(View v) {
         Intent i = new Intent(this, signUp.class);
         startActivity(i);

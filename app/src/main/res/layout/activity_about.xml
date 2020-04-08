@@ -9,18 +9,21 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="377dp"
-        android:layout_height="139dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginEnd="20dp"
-        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
         android:scaleType="centerCrop"
-        android:text="TrackSub is a program who’s care about tracking your subscriptions in multiple platforms in a lots of fields like, entertainment, education, podcast, music or movies. Or even in design field like adobe.You can add your subscription, determine the price and period and then get notification if subscription will be end. This benefit is to notify you to decide  if you want to renew or stop your subscription."
+        android:text="Nowadays users are subscribed to multiple apps like Spotify, Netflix, Amazon Prime and other entertainment and utility apps. This app will notify you and help you keep track of all your subscriptions and bills that you need to pay when the deadline arrives.
+"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintVertical_bias="0.137" />
 
     <View
         android:id="@+id/view2"
@@ -56,7 +59,6 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:background="@null"
         android:onClick="moveToMain"
@@ -70,10 +72,11 @@
         android:id="@+id/imageView4"
         android:layout_width="373dp"
         android:layout_height="443dp"
-        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.84"
         app:srcCompat="@drawable/images" />
 
 

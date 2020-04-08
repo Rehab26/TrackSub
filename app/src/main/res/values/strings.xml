@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">tracksubapp</string>
-        <string name="action_settings">Settings</string>
-        <string name="hello_world">Hello world!</string>
-        <string name="date_label_set">Press the button to set the date</string>
-        <string name="date_button_set">Set Date</string>
-        <string name="date_view_set">The Date is: </string>
-        <string name="date_selected"></string>
+    <string name="app_name">trackSub</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="date_selected"></string>
 </resources>

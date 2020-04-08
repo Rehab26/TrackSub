@@ -7,42 +7,44 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Subs {
-    public int subCount = 0;
-    public String subName;
-    public int subID = 0;
-    public String subImg;
+public class Subs extends DateCalc{
+    public String name;
+    //public String subImg;
     public String price;
-    public Map<String, String> allSubs = new HashMap<>();
-    public String uid;
+    public String startDate;
+    public String endDate;
+    //public Map<String, String> allSubs = new HashMap<>();
+    //public String uid;
+    //public Map<String, Integer> startDate = new HashMap<>();
+    //public Map<String, Integer> endDate = new HashMap<>();
+    //public DateCalc endDate;
+    //public DateCalc startDate;
+    public Subs() {
 
-    public Subs(String uid, String subName , String price) {
-        this.subID+=1;
-        this.subName = subName;
-        this.subImg = subName+".png";
+    }
+
+    @Override
+    public DateCalc getEndDate(DateCalc date) {
+        return super.getEndDate(date);
+    }
+
+    public Subs(String subName, String price) {
+        this.name = subName;
         this.price = price;
+
     }
 
     @Exclude
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
-        result.put("subID", this.subID);
-        result.put("name", this.subName);
+        result.put("name", this.name);
         result.put("price", this.price);
         return result;
     }
 
 
-    public String getSubName(){
-        return this.subName;
+    public String getSubName() {
+        return this.name;
     }
-    public  String getSubImg(){
-        return this.subImg;
-    }
-    public int getSubId(){
-        return this.subID;
-    }
-    public void addToFirebase(String uid){
 
-    }
 }
